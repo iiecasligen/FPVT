@@ -59,6 +59,10 @@ conda create -n trace_env python=3.7
 pip install -r trace_env.txt
 ```
 
+### Models
+
+The models can be downloaded from https://pan.baidu.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (Password: xxxx).
+
 ### Testing process
 
 Step 1: extract some frames from source video database
