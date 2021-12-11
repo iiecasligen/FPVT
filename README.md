@@ -59,10 +59,20 @@ conda create -n trace_env python=3.7
 pip install -r trace_env.txt
 ```
 
+### Testing process
 
-
-
-
+Step 1: extract some frames from source video database
+```
+python step1_source_video2some_frames.py --video-root ./source_data/ --frame-root ./step1_source_frames/ --extract-num 10
+```
+Step 2: extract background form source frames extracted in Step 1
+```
+python step2_get_source_frames_back.py --frame-root ./step1_source_frames/ --back-root ./step2_source_backs/
+```
+Step 3: extract all frames, masks, backgrounds, foregrounds, rectangle of masks from fake video
+```
+python step3_get_fake_frames_back.py --video-path ./fake_data/source_01_fake_00.mp4 --frame-root ./step3_fake_frames/ --rect-root ./step3_fake_rect/ --mask-root ./step3_fake_masks/ --back-root ./step3_fake_backs/ --fore-root ./step3_fake_fores/
+```
 
 
 
