@@ -93,3 +93,24 @@ Step 7: get source clip form traced source video
 ```
 python step7_flow_map.py --fake_rect_pkl ./step3_fake_rect/fake_data/source_01_fake_00.pkl --fake_flow_root ./step6_fake_flows/ --source_rect_pkl ./step5_source_rect/scene_0005_video_0002.pkl --source_flow_root ./step6_source_flows/ --model_path ./model/flow_model_31.pth --use_gpu_id "0" --image_size 256 --batch_size 64 --num_workers 5
 ```
+
+## Acknowledgements
+
+If you use the FPVT dataset or this repository, please cite the following paper:
+```
+@inproceedings{XXX,
+  title = {A Two-level Learning Framework of Fake Portrait Videos Tracing},
+  author = {Gen Li, Xianfeng Zhao, Yun Cao},
+  booktitle = {XXX},
+  year = {2021}
+}
+```
+or cite the online document:
+```
+@online{XXX,
+  title = {A Two-level Learning Framework of Fake Portrait Videos Tracing},
+  author = {Gen Li, Xianfeng Zhao, Yun Cao},
+  url = {https://github.com/iiecasligen/FPVT/},
+  year = {2021}
+}
+```
