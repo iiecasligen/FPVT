@@ -10,7 +10,9 @@ Fake Portrait Videos Tracing, which investigates the fake portrait videos and tr
 
 ## FakeDT Dataset
 
-We released a fake portrait videos tracing dataset, named FakeTD, to support the development of more effective fake portrait videos tracing methods. The FakeTD dataset can be downloaded from https://pan.baidu.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (Password: xxxx).
+We released a fake portrait videos tracing dataset, named FakeTD, to support the development of more effective fake portrait videos tracing methods.
+
+The FakeTD dataset can be downloaded from https://pan.baidu.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (Password: xxxx).
 
 The structure of FakeDT dataset is:
 ```
