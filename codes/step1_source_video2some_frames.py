@@ -28,7 +28,7 @@ def video2frames(video_root, frame_root, extract_num):
             cv2.imwrite(os.path.join(frame_root, video_first + '__%05d.png' % frame_index), cap_frame)
         video_cap.release()
 
-    print("# step1 Successful: extracted {} * {} frames.".format(extract_num, len(video_name_list)))
+    print("# step1: Successful: extracted {} * {} frames.".format(extract_num, len(video_name_list)))
 
 
 if __name__ == '__main__':
