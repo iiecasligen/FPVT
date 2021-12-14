@@ -78,7 +78,7 @@ def source_map(fake_back_root, source_back_root, source_video_root, fake_video_p
         video_score = score_list[score_index][1]
         print("# step4: video name: %s, video score: %.8f" % (video_name, video_score))
 
-    print("# step4 Successful: get source video.")
+    print("# step4: Successful: get source video.")
 
 
 if __name__ == '__main__':
