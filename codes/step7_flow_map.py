@@ -108,7 +108,7 @@ def flow_map(fake_flow_root, source_flow_root, use_gpu_id, model_path,
                                                                                      frame_index_location_end,
                                                                                      video_score))
 
-    print("# step7 Successful: get location")
+    print("# step7: Successful: get location")
 
 
 if __name__ == '__main__':
