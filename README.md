@@ -66,8 +66,15 @@ The models can be downloaded from https://pan.baidu.com/s/1y4poLsB0pvnBoSXZR86w8
 ### Testing process
 
 Step 1: extract some frames from source video database
+
+Command:
 ```
 python step1_source_video2some_frames.py --video-root ./source_videos/ --frame-root ./step1_source_frames/ --extract-num 5
+```
+Output:
+```
+# step1: extract some frames from every source video
+# step1 Successful: extracted 5 * 11 frames
 ```
 Step 2: extract background form source frames
 ```
