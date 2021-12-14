@@ -28,7 +28,7 @@ def frame2back(frame_root, back_root):
         frame_mask = cv2.cvtColor(np.array(frame_mask, np.uint8), cv2.COLOR_GRAY2BGR)
         frame_back = (1 - (frame_mask / 255)) * frame_read
         cv2.imwrite(os.path.join(back_root, frame_name), frame_back)
-    print("# step2 Successful: extract background images over.")
+    print("# step2: Successful: extract background images over.")
 
 
 if __name__ == '__main__':
