@@ -78,7 +78,7 @@ def prepare_input_video(video_path, frame_root, rect_root, mask_root, back_root,
         pickle.dump(rect_info, file_pkl)
     file_pkl.close()
 
-    print("# step3 Successful: save rect pkl file over.")
+    print("# step3: Successful: save rect pkl file over.")
 
 
 if __name__ == '__main__':
