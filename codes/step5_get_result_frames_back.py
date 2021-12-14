@@ -21,10 +21,10 @@ def prepare_input_video(video_path, frame_root, rect_root, mask_root, back_root,
     (video_first, video_extension) = os.path.splitext(os.path.basename(video_path))
     video_cap = cv2.VideoCapture(video_path)
     frame_num = int(video_cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    print('# step3: total frame number: {}'.format(frame_num))
+    print('# step5: total frame number: {}'.format(frame_num))
 
-    frame_begin_num = int(input("# step3: choose begin num of fake frame: "))
-    frame_end_num = int(input("# step3: choose end num of fake frame: "))
+    frame_begin_num = int(input("# step5: choose begin num of fake frame: "))
+    frame_end_num = int(input("# step5: choose end num of fake frame: "))
 
     for frame_index in tqdm(range(frame_num)):
         cap_success, cap_frame = video_cap.read()
@@ -79,7 +79,7 @@ def prepare_input_video(video_path, frame_root, rect_root, mask_root, back_root,
         pickle.dump(rect_info, file_pkl)
     file_pkl.close()
 
-    print("# step5 Successful: get one rect pkl file over.")
+    print("# step5: Successful: get one rect pkl file over.")
 
 
 if __name__ == '__main__':
