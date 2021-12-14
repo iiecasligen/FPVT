@@ -67,7 +67,7 @@ The models can be downloaded from https://pan.baidu.com/s/1y4poLsB0pvnBoSXZR86w8
 
 Step 1: extract some frames from source video database
 ```
-python step1_source_video2some_frames.py --video-root ./source_data/ --frame-root ./step1_source_frames/ --extract-num 10
+python step1_source_video2some_frames.py --video-root ./source_videos/ --frame-root ./step1_source_frames/ --extract-num 5
 ```
 Step 2: extract background form source frames
 ```
@@ -75,11 +75,11 @@ python step2_get_source_frames_back.py --frame-root ./step1_source_frames/ --bac
 ```
 Step 3: extract all frames, masks, backgrounds, foregrounds, rectangle of masks from fake video
 ```
-python step3_get_fake_frames_back.py --video-path ./fake_data/source_01_fake_00.mp4 --frame-root ./step3_fake_frames/ --rect-root ./step3_fake_rect/ --mask-root ./step3_fake_masks/ --back-root ./step3_fake_backs/ --fore-root ./step3_fake_fores/
+python step3_get_fake_frames_back.py --video-path ./fake_video/source_01_fake_00.mp4 --frame-root ./step3_fake_frames/ --rect-root ./step3_fake_rect/ --mask-root ./step3_fake_masks/ --back-root ./step3_fake_backs/ --fore-root ./step3_fake_fores/
 ```
 Step 4: get source video from source video database
 ```
-python step4_source_video_map.py --fake_back_root ./step3_fake_backs/ --source_back_root ./step2_source_backs/ --source_video_root ./source_data/ --fake_video_path ./fake_data/source_01_fake_00.mp4 --use_gpu_id "0" --image_size 256 --model_path ./model/scene_model_18.pth --recompute_num 5 --batch_size 64 --num_workers 5
+python step4_source_video_map.py --fake_back_root ./step3_fake_backs/ --source_back_root ./step2_source_backs/ --source_video_root ./source_videos/ --fake_video_path ./fake_video/source_01_fake_00.mp4 --use_gpu_id "0" --image_size 256 --model_path ./model/scene_model_32.pth --recompute_num 1 --batch_size 64 --num_workers 5
 ```
 Step 5: extract all frames, masks, backgrounds, foregrounds, rectangle of masks from traced source video
 ```
@@ -91,7 +91,7 @@ python step6_get_flow.py --fake_frame_root ./step3_fake_frames/ --fake_mask_root
 ```
 Step 7: get source clip from traced source video
 ```
-python step7_flow_map.py --fake_rect_pkl ./step3_fake_rect/fake_data/source_01_fake_00.pkl --fake_flow_root ./step6_fake_flows/ --source_rect_pkl ./step5_source_rect/scene_0005_video_0002.pkl --source_flow_root ./step6_source_flows/ --model_path ./model/flow_model_31.pth --use_gpu_id "0" --image_size 256 --batch_size 64 --num_workers 5
+python step7_flow_map.py --fake_rect_pkl ./step3_fake_rect/source_01_fake_00.pkl --fake_flow_root ./step6_fake_flows/ --source_rect_pkl ./step5_source_rect/scene_0005_video_0002.pkl --source_flow_root ./step6_source_flows/ --model_path ./model/flow_model_77.pth --use_gpu_id "0" --image_size 256 --batch_size 64 --num_workers 5
 ```
 
 ## Acknowledgements
