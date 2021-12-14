@@ -74,7 +74,7 @@ python step1_source_video2some_frames.py --video-root ./source_videos/ --frame-r
 Output:
 ```
 # step1: extract some frames from every source video
-# step1 Successful: extracted 5 * 11 frames
+# step1: Successful: extracted 5 * 11 frames
 ```
 
 Step 2: extract background form source frames
@@ -87,7 +87,7 @@ Output:
 ```
 # step2: get back from every source frame
 # step2: frame num: 55
-# step2 Successful: get back over
+# step2: Successful: get back over
 ```
 
 Step 3: extract all frames, masks, backgrounds, foregrounds, rectangle of masks from fake video
@@ -106,7 +106,7 @@ Output:
 # step3: extract 25 frames over.
 # step3: frame num: 25.
 # step3: extract background, masks and foreground over.
-# step3 Successful: save rect pkl file over.
+# step3: Successful: save rect pkl file over.
 ```
 
 Step 4: get source video from source video database
@@ -141,7 +141,7 @@ Output:
 # step4: video name: scene_0008_video_0002.mp4, video score: 0.95695024
 # step4: video name: scene_0003_video_0002.mp4, video score: 1.03249906
 # step4: video name: scene_0011_video_0002.mp4, video score: 1.15526720
-# step4 Successful: get source video.
+# step4: Successful: get source video.
 ```
 
 Step 5: extract all frames, masks, backgrounds, foregrounds, rectangle of masks from traced source video
@@ -154,13 +154,13 @@ Output:
 ```
 # step5: extract some frames, background, masks, foreground and rect.
 # step5: from /sdb1/lg/trace_data/test_github/source_data/scene_0005_video_0002.mp4
-# step3: total frame number: 839
-# step3: choose begin num of fake frame: 0
-# step3: choose end num of fake frame: 50
+# step5: total frame number: 839
+# step5: choose begin num of fake frame: 0
+# step5: choose end num of fake frame: 50
 # step5: extract 839 frames over
 # step5: frame num: 50
 # step5: extract background, masks and foreground over.
-# step5 Successful: get one rect pkl file over.
+# step5: Successful: get one rect pkl file over.
 ```
 
 Step 6: extract optical flow from fake video and source video
@@ -177,7 +177,7 @@ Output:
 # step6: load model from /sdb1/lg/trace_data/test_github/model/raft-sintel.pth
 # step6: get fake frame flow
 # step6: get scence frame flow
-# step6 Successful: get flow over
+# step6: Successful: get flow over
 ```
 
 Step 7: get source clip from traced source video
@@ -216,7 +216,7 @@ Output:
 # step7: flow index: [9, 33], frame index: [9, 34], score: 0.06472408
 # step7: flow index: [18, 42], frame index: [18, 43], score: 0.06523571
 # step7: flow index: [16, 40], frame index: [16, 41], score: 0.06900581
-# step7 Successful: get location
+# step7: Successful: get location
 ```
 
 ## Acknowledgements
