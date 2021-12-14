@@ -1,6 +1,6 @@
 # FPVT
 
-A Two-level Learning Framework of Fake Portrait Videos Tracing
+A Two-level Learning based Approach for Fake Portrait Videos Tracing
 
 ## Abstract
 
@@ -224,7 +224,7 @@ Output:
 If you use the FPVT dataset or this repository, please cite the following paper:
 ```
 @inproceedings{XXX,
-  title = {A Two-level Learning Framework of Fake Portrait Videos Tracing},
+  title = {A Two-level Learning based Approach for Fake Portrait Videos Tracing},
   author = {Gen Li, Xianfeng Zhao, Yun Cao},
   booktitle = {XXX},
   year = {2021}
@@ -233,7 +233,7 @@ If you use the FPVT dataset or this repository, please cite the following paper:
 or cite the online document:
 ```
 @online{XXX,
-  title = {A Two-level Learning Framework of Fake Portrait Videos Tracing},
+  title = {A Two-level Learning based Approach for Fake Portrait Videos Tracing},
   author = {Gen Li, Xianfeng Zhao, Yun Cao},
   url = {https://github.com/iiecasligen/FPVT/},
   year = {2021}
