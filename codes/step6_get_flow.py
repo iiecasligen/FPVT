@@ -62,7 +62,7 @@ def get_flow(fake_frame_root, source_frame_root, fake_mask_root, source_mask_roo
         flow_fore = ((mask_read / 255) * flow_up) + ((1 - (mask_read / 255)) * 255)
         cv2.imwrite(os.path.join(source_flow_root, os.path.basename(img_path0)), flow_fore)
 
-    print("# step6 Successful: get flow over")
+    print("# step6: Successful: get flow over")
 
 
 if __name__ == '__main__':
