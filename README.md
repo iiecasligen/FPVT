@@ -69,7 +69,9 @@ Step 1: extract some frames from source video database
 
 Command:
 ```
-python step1_source_video2some_frames.py --video-root ./source_videos/ --frame-root ./step1_source_frames/ --extract-num 5
+python step1_source_video2some_frames.py --video-root ./source_videos/
+                                         --frame-root ./step1_source_frames/
+                                         --extract-num 5
 ```
 Output:
 ```
@@ -81,7 +83,8 @@ Step 2: extract background form source frames
 
 Command:
 ```
-python step2_get_source_frames_back.py --frame-root ./step1_source_frames/ --back-root ./step2_source_backs/
+python step2_get_source_frames_back.py --frame-root ./step1_source_frames/
+                                       --back-root ./step2_source_backs/
 ```
 Output:
 ```
@@ -94,7 +97,12 @@ Step 3: extract all frames, masks, backgrounds, foregrounds, rectangle of masks 
 
 Command:
 ```
-python step3_get_fake_frames_back.py --video-path ./fake_video/source_01_fake_00.mp4 --frame-root ./step3_fake_frames/ --rect-root ./step3_fake_rect/ --mask-root ./step3_fake_masks/ --back-root ./step3_fake_backs/ --fore-root ./step3_fake_fores/
+python step3_get_fake_frames_back.py --video-path ./fake_video/source_01_fake_00.mp4
+                                     --frame-root ./step3_fake_frames/
+                                     --rect-root ./step3_fake_rect/
+                                     --mask-root ./step3_fake_masks/
+                                     --back-root ./step3_fake_backs/
+                                     --fore-root ./step3_fake_fores/
 ```
 Output:
 ```
@@ -113,7 +121,16 @@ Step 4: get source video from source video database
 
 Command:
 ```
-python step4_source_video_map.py --fake_back_root ./step3_fake_backs/ --source_back_root ./step2_source_backs/ --source_video_root ./source_videos/ --fake_video_path ./fake_video/source_01_fake_00.mp4 --use_gpu_id "0" --image_size 256 --model_path ./model/scene_model_32.pth --recompute_num 1 --batch_size 64 --num_workers 5
+python step4_source_video_map.py --fake_back_root ./step3_fake_backs/
+                                 --source_back_root ./step2_source_backs/
+                                 --source_video_root ./source_videos/
+                                 --fake_video_path ./fake_video/source_01_fake_00.mp4
+                                 --use_gpu_id "0"
+                                 --image_size 256
+                                 --model_path ./model/scene_model_32.pth
+                                 --recompute_num 1
+                                 --batch_size 64
+                                 --num_workers 5
 ```
 Output:
 ```
@@ -148,7 +165,12 @@ Step 5: extract all frames, masks, backgrounds, foregrounds, rectangle of masks 
 
 Command:
 ```
-python step5_get_result_frames_back.py --source_video_path ./source_data/scene_0005_video_0002.mp4 --source_frame_root ./step5_source_frames/ --source_rect_root ./step5_source_rect/ --source_mask_root ./step5_source_masks/ --source_back_root ./step5_source_backs/ --source_fore_root ./step5_source_fores/
+python step5_get_result_frames_back.py --source_video_path ./source_data/scene_0005_video_0002.mp4
+                                       --source_frame_root ./step5_source_frames/
+                                       --source_rect_root ./step5_source_rect/
+                                       --source_mask_root ./step5_source_masks/
+                                       --source_back_root ./step5_source_backs/
+                                       --source_fore_root ./step5_source_fores/
 ```
 Output:
 ```
@@ -167,7 +189,14 @@ Step 6: extract optical flow from fake video and source video
 
 Command:
 ```
-python step6_get_flow.py --fake_frame_root ./step3_fake_frames/ --fake_mask_root ./step3_fake_masks/ --fake_flow_root ./step6_fake_flows/ --source_frame_root ./step5_source_frames/ --source_mask_root ./step5_source_masks/ --source_flow_root ./step6_source_flows/ --model_path ./model/raft-sintel.pth --use_gpu_id "0"
+python step6_get_flow.py --fake_frame_root ./step3_fake_frames/
+                         --fake_mask_root ./step3_fake_masks/
+                         --fake_flow_root ./step6_fake_flows/
+                         --source_frame_root ./step5_source_frames/
+                         --source_mask_root ./step5_source_masks/
+                         --source_flow_root ./step6_source_flows/
+                         --model_path ./model/raft-sintel.pth
+                         --use_gpu_id "0"
 ```
 Output:
 ```
@@ -184,7 +213,15 @@ Step 7: get source clip from traced source video
 
 Command:
 ```
-python step7_flow_map.py --fake_rect_pkl ./step3_fake_rect/source_01_fake_00.pkl --fake_flow_root ./step6_fake_flows/ --source_rect_pkl ./step5_source_rect/scene_0005_video_0002.pkl --source_flow_root ./step6_source_flows/ --model_path ./model/flow_model_77.pth --use_gpu_id "0" --image_size 256 --batch_size 64 --num_workers 5
+python step7_flow_map.py --fake_rect_pkl ./step3_fake_rect/source_01_fake_00.pkl
+                         --fake_flow_root ./step6_fake_flows/
+                         --source_rect_pkl ./step5_source_rect/scene_0005_video_0002.pkl
+                         --source_flow_root ./step6_source_flows/
+                         --model_path ./model/flow_model_77.pth
+                         --use_gpu_id "0"
+                         --image_size 256
+                         --batch_size 64
+                         --num_workers 5
 ```
 Output:
 ```
