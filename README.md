@@ -53,7 +53,6 @@ For the fake video of `source_02_fake_04.mp4` in `FakeTD-2+fake_part0.rar`:
 ## Demo Guide
 
 ### Environment
-
 ```
 conda create -n trace_env python=3.7
 pip install -r trace_env.txt
