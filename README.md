@@ -134,7 +134,7 @@ python step4_source_video_map.py --fake_back_root ./step3_fake_backs/
 Output:
 ```
 # step4: retrieval source video by scene feature map.
-# step4: load model from /sdb1/lg/trace_data/test_github/model/scene_model_32.pth
+# step4: load model from ./model/scene_model_32.pth
 # step4: choose frame num used for map scene: 5
 # step4: loaded 275 = 64/5 pair image.
 # step4: testing.
@@ -174,7 +174,7 @@ python step5_get_result_frames_back.py --source_video_path ./source_data/scene_0
 Output:
 ```
 # step5: extract some frames, background, masks, foreground and rect.
-# step5: from /sdb1/lg/trace_data/test_github/source_data/scene_0005_video_0002.mp4
+# step5: from ./source_data/scene_0005_video_0002.mp4
 # step5: total frame number: 839
 # step5: choose begin num of fake frame: 0
 # step5: choose end num of fake frame: 50
@@ -202,7 +202,7 @@ Output:
 # step6: get all flow from fake frames and scence frames
 # step6: fake frame pair is: 24
 # step6: scence frame pair is: 49
-# step6: load model from /sdb1/lg/trace_data/test_github/model/raft-sintel.pth
+# step6: load model from ./model/raft-sintel.pth
 # step6: get fake frame flow
 # step6: get scence frame flow
 # step6: Successful: get flow over
@@ -228,7 +228,7 @@ Output:
 # step7: fake flow number: 24
 # step7: choose sample num of map flow: 5
 # step7: source flow number: 49
-# step7: load model from /sdb1/lg/trace_data/test_github/model/flow_model_77.pth
+# step7: load model from ./model/flow_model_77.pth
 # step7: testing
 # step7: loaded 26 = 64/1 pair image
 # step7: [20:26:49] [0/5] [0/1]
