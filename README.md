@@ -255,7 +255,7 @@ Output:
 # step7: Successful: get location
 ```
 
-## Acknowledgements
+## Citations
 
 If you use the FPVT dataset or this repository, please cite the following paper:
 ```
