@@ -265,7 +265,7 @@ If you use the FPVT dataset or this repository, please cite the following paper:
   title = {A Two-level Learning based Approach for Fake Portrait Videos Tracing},
   author = {Gen Li, Xianfeng Zhao, Yun Cao},
   booktitle = {XXX},
-  year = {2021}
+  year = {2022}
 }
 ```
 or cite the online document:
@@ -274,6 +274,6 @@ or cite the online document:
   title = {A Two-level Learning based Approach for Fake Portrait Videos Tracing},
   author = {Gen Li, Xianfeng Zhao, Yun Cao},
   url = {https://github.com/iiecasligen/FPVT/},
-  year = {2021}
+  year = {2022}
 }
 ```
