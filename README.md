@@ -4,9 +4,9 @@ A Two-level Learning based Approach for Fake Portrait Videos Tracing
 
 ## Abstract
 
-![pipeline](images/sample02.jpg)
+![pipeline](images/pic02.jpg)
 
-Fake Portrait Videos Tracing, which investigates the fake portrait videos and traces source videos from suspected video database at frame level, is a challenging task for video forensics. Here, we propose the first solution exploiting two-level learning based approach to trace fake portrait videos. Our approach mainly consists of two stages. First, the scene tracing stage aims to retrieve the most similar source video to the input fake portrait video from the suspected video database based on the scene features. Second, the optical flow tracing stage aims to locate the most similar source clip to the input fake portrait video from the retrieved source video based on the motion modes. After that, the source video of the input fake portrait video can be traced at frame level precisely.
+Fake Portrait Video Tracing (FPVT), which investigates the fake portrait video and traces source video from the suspected video database at frame level, is a challenging task for video forensics. In this paper, we propose the first solution exploiting two-level learning based approach to trace fake portrait video. Our approach mainly consists of two stages. First, the scene tracing stage aims to retrieve the most similar source video to the input fake portrait video from the suspected video database based on the scene feature. Second, the optical flow tracing stage aims to locate the most similar source clip to the input fake portrait video from the retrieved source video based on the motion mode. After that, the source video of the input fake portrait video can be traced at frame level precisely. Experimental results demonstrate the effectiveness of our proposed approach. Besides, we released a FPVT dataset, named \textit{FakeTD}, to support the development of more effective FPVT methods.
 
 The detailed analysis is presented in our paper of https://xxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
@@ -244,16 +244,16 @@ Output:
 # step7: [20:26:58] [4/5] [0/1]
 # step7: flow score num: 26
 # step7: show top score num: 10
-# step7: flow index: [10, 34], frame index: [10, 35], score: 0.02180487
-# step7: flow index: [11, 35], frame index: [11, 36], score: 0.05250693
-# step7: flow index: [12, 36], frame index: [12, 37], score: 0.05268258
-# step7: flow index: [13, 37], frame index: [13, 38], score: 0.05558845
-# step7: flow index: [19, 43], frame index: [19, 44], score: 0.05765110
-# step7: flow index: [7, 31], frame index: [7, 32], score: 0.05907261
-# step7: flow index: [8, 32], frame index: [8, 33], score: 0.06436583
-# step7: flow index: [9, 33], frame index: [9, 34], score: 0.06472408
-# step7: flow index: [18, 42], frame index: [18, 43], score: 0.06523571
-# step7: flow index: [16, 40], frame index: [16, 41], score: 0.06900581
+# step7: flow index: [10, 34], frame index: [10, 35], score: 0.02180132
+# step7: flow index: [11, 35], frame index: [11, 36], score: 0.29919489
+# step7: flow index: [12, 36], frame index: [12, 37], score: 0.29991783
+# step7: flow index: [13, 37], frame index: [13, 38], score: 0.30250775
+# step7: flow index: [19, 43], frame index: [19, 44], score: 0.30268285
+# step7: flow index: [7, 31], frame index: [7, 32], score: 0.30428785
+# step7: flow index: [8, 32], frame index: [8, 33], score: 0.30556632
+# step7: flow index: [9, 33], frame index: [9, 34], score: 0.30558733
+# step7: flow index: [18, 42], frame index: [18, 43], score: 0.30675199
+# step7: flow index: [16, 40], frame index: [16, 41], score: 0.30765087
 # step7: Successful: get location
 ```
 
