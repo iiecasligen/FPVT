@@ -1,6 +1,6 @@
 # FPVT
 
-A Two-level Learning based Approach for Fake Portrait Videos Tracing
+A Two-level Learning based Approach for Fake Portrait Video Tracing
 
 ## Abstract
 
@@ -8,11 +8,12 @@ A Two-level Learning based Approach for Fake Portrait Videos Tracing
 
 Fake Portrait Video Tracing (FPVT), which investigates the fake portrait video and traces source video from the suspected video database at frame level, is a challenging task for video forensics. In this paper, we propose the first solution exploiting two-level learning based approach to trace fake portrait video. Our approach mainly consists of two stages. First, the scene tracing stage aims to retrieve the most similar source video to the input fake portrait video from the suspected video database based on the scene feature. Second, the optical flow tracing stage aims to locate the most similar source clip to the input fake portrait video from the retrieved source video based on the motion mode. After that, the source video of the input fake portrait video can be traced at frame level precisely. Experimental results demonstrate the effectiveness of our proposed approach.
 
+
 The detailed analysis is presented in our paper of https://xxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 ## FakeDT Dataset
 
-We released a fake portrait videos tracing dataset, named FakeTD, to support the development of more effective fake portrait videos tracing methods.
+We released a FPVT dataset, named FakeTD, to support the development of more effective FPVT methods.
 
 The FakeTD dataset can be downloaded from https://pan.baidu.com/s/1F4_sd7vXfd4lF8Esox7x6Q (Password: FPVT).
 
